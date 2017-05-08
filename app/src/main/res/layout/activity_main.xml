@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gsww.www.arcmenu.MainActivity">
+
+   <com.gsww.www.arcmenu.ArcMenu
+       android:id="@+id/arcMenu"
+       app:position="right_bottom"
+       app:radius="100dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@+id/but_center"
+       android:layout_width="wrap_content"
+       android:background="@drawable/composer_button"
+       android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/composer_icn_plus"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+   </RelativeLayout>
+       <ImageView
+           android:id="@+id/iv_camera"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/composer_camera"
+           />
+       <ImageView
+           android:id="@+id/iv_music"
+           android:background="@drawable/composer_music"
+           android:layout_width="40dp"
+           android:layout_height="40dp" />
+       <ImageView
+           android:id="@+id/iv_place"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/composer_place"
+           />
+       <ImageView
+           android:id="@+id/iv_sun"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/composer_sun"
+           />
+
+   </com.gsww.www.arcmenu.ArcMenu>
+
+</RelativeLayout>
